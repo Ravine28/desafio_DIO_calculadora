@@ -2,9 +2,9 @@ def calcular_nivel(vitorias, derrotas);
     saldo_vitorias = vitorias - derrotas
 
 do {
-    console.log("Informe a quantidade de XP maior ou igual a 1000: ");
+    console.log("Informe a quantidade de XP maior ou igual a 10: ");
     vitorias = parseInt(prompt());
-} while (vitorias< 1000);
+} while (vitorias< 10);
 
 switch (true) {
     case vitorias <10:
