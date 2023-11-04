@@ -1,0 +1,45 @@
+def calcular_nivel(vitorias, derrotas);
+    saldo_vitorias = vitorias - derrotas
+
+do {
+    console.log("Informe a quantidade de XP maior ou igual a 1000: ");
+    vitorias = parseInt(prompt());
+} while (vitorias< 1000);
+
+switch (true) {
+    case vitorias <10:
+        console.log(heroi + " é nível Ferro");
+        break;
+
+    case vitorias > 11 && vitorias <= 20:
+        console.log(heroi + " é nível Bronze");
+        break;
+
+    case vitorias > 21 && vitorias <= 50:
+        console.log(heroi + " é nível Prata");
+        break;
+
+    case vitorias > 51 && vitorias <= 80:
+        console.log(heroi + " é nível Ouro");
+        break;
+
+    case vitorias > 81 && vitorias <= 90:
+        console.log(heroi + " é nível Diamante");
+        break;
+
+    case vitorias > 91 && vitorias <= 100:
+        console.log(heroi + " é nível Lendário");
+        break;
+
+    default:
+        console.log(heroi + " é nível Imortal");
+        break;
+};
+
+def main();
+    vitorias = int(input("Informe a quantidade de vitórias: "))
+    derrotas = int(input("Informe a quantidade de derrotas: "))
+
+    saldoVitorias, nivel = calcular_nivel(vitorias, derrotas)
+
+    printf("O Herói tem um saldo de {saldoVitorias} e está no nível de {nivel}")
